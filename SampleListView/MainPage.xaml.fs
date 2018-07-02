@@ -7,7 +7,7 @@ open Xamarin.Forms.Xaml
 open FSharp.Data
 open Deedle
 
-type Weather = JsonProvider<"https://api.openweathermap.org/data/2.5/weather?units=metric&q=Prague&appid=ce5f59bf8d05a0625143d81eb3117718">
+type Weather = JsonProvider<"https://api.openweathermap.org/data/2.5/weather?units=metric&q=Prague&appid=xxxxxx">
 
 type CurrentTemp(place : string, temp: int) = 
     member x.Place = place
@@ -34,7 +34,7 @@ type MainPage() =
 
     let getCurrentTemp place =
       try
-//        let w = Weather.Load("https://api.openweathermap.org/data/2.5/weather?units=metric&q=Prague&appid=ce5f59bf8d05a0625143d81eb3117718")
+//        let w = Weather.Load("https://api.openweathermap.org/data/2.5/weather?units=metric&q=Prague&appid=xxxxxxx")
 //        w.Main.Temp
           10
       with
