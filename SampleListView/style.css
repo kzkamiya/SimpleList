@@ -1,0 +1,9 @@
+﻿/* CSS */
+listview {
+    background-color: red;
+}
+
+^ContentPage {
+    background-color: lightblue;
+    padding: 20;
+}

@@ -5,22 +5,25 @@
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="App.xaml" />
+    <Compile Include="AssemblyInfo.fs" />
     <Compile Include="MainPage.xaml.fs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="App.xaml" />
     <Compile Include="App.xaml.fs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AssemblyInfo.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="FSharp.Core" Version="4.3.3" />
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
     <PackageReference Include="FSharp.Data" Version="2.4.6" />
     <PackageReference Include="Deedle" Version="1.2.5" />
+    <None Include="style.css" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.583944" />
+    <PackageReference Include="FSharp.Core" Version="4.5.0" />
+    <EmbeddedResource Include="Assets\styles.css" />
   </ItemGroup>
 </Project>
